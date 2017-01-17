@@ -52,3 +52,64 @@ class RectangleTester
 ```
 
 
+#Exception Class
+
+Represents errors that occur during application execution.
+
+
+Syntax
+C#
+```c#
+[SerializableAttribute]
+[ClassInterfaceAttribute(ClassInterfaceType.None)]
+[ComVisibleAttribute(true)]
+public class Exception : ISerializable, _Exception
+#Exception Handling 
+```
+
+
+A try block is used by C# programmers to partition code that might be affected by an exception. Associated catch blocks are used to handle any resulting exceptions. A finally block contains code that is run regardless of whether or not an exception is thrown in the try block, such as releasing resources that are allocated in the try block. A try block requires one or more associated catch blocks, or a finally block, or both.
+The following examples show a try-catch statement, a try-finally statement, and a try-catch-finally statement.
+
+``` c#
+ try
+            {
+                // Code to try goes here.
+            }
+            catch (SomeSpecificException ex)
+            {
+                // Code to handle the exception goes here.
+                // Only catch exceptions that you know how to handle.
+                // Never catch base class System.Exception without
+                // rethrowing it at the end of the catch block.
+            }
+            
+            
+try
+            {
+                // Code to try goes here.
+            }
+            finally
+            {
+                // Code to execute after the try block goes here.
+            }
+            
+            try
+            {
+                // Code to try goes here.
+            }
+            catch (SomeSpecificException ex)
+            {
+                // Code to handle the exception goes here.
+            }
+            finally
+            {
+                // Code to execute after the try (and possibly catch) blocks 
+                // goes here.
+            }
+            
+            
+            
+            
+            ```
+
