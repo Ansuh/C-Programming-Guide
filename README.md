@@ -1,7 +1,62 @@
-# C-Programming-Guide
+# C# Programming-Guide
 _This repository includes the main concepts of C#._
 
+## General Structure of a C# Program
+C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.
+``` c#
+// A skeleton of a C# program 
+using System;
+namespace YourNamespace
+{
+    class YourClass
+    {
+    }
 
+    struct YourStruct
+    {
+    }
+
+    interface IYourInterface 
+    {
+    }
+
+    delegate int YourDelegate();
+
+    enum YourEnum 
+    {
+    }
+
+    namespace YourNestedNamespace
+    {
+        struct YourStruct 
+        {
+        }
+    }
+
+    class YourMainClass
+    {
+        static void Main(string[] args) 
+        {
+            //Your program starts here...
+        }
+    }
+}
+```
+
+Now we will discuss each of this types.
+
+## - [x] Class
+A class is a construct that enables you to create your own custom types by grouping together variables of other types, methods and events. A class is like a blueprint. It defines the data and behavior of a type. If the class is not declared as static, client code can use it by creating objects or instances which are assigned to a variable. The variable remains in memory until all references to it go out of scope. At that time, the CLR marks it as eligible for garbage collection. If the class is declared as static, then only one copy exists in memory and client code can only access it through the class itself, not an instance variable.
+
+### Declaring Classes
+
+``` c#
+ public class Customer
+    {
+        //Fields, properties, methods and events go here...
+    }
+```
+The class keyword is preceded by the access level. Because public is used in this case, anyone can create objects from this class. The name of the class follows the class keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as class members.
 
 
 # The Common Type System
