@@ -59,6 +59,28 @@ A class is a construct that enables you to create your own custom types by group
 ```
 The class keyword is preceded by the access level. Because public is used in this case, anyone can create objects from this class. The name of the class follows the class keyword. The remainder of the definition is the class body, where the behavior and data are defined. Fields, properties, methods, and events on a class are collectively referred to as class members.
 
+#### Creating Objects
+
+Although they are sometimes used interchangeably, a class and an object are different things. A class defines a type of object, but it is not an object itself. An object is a concrete entity based on a class, and is sometimes referred to as an instance of a class.
+Objects can be created by using the new keyword followed by the name of the class that the object will be based on, like this:
+``` c#
+Customer object1 = new Customer();
+```
+
+When an instance of a class is created, a reference to the object is passed back to the programmer. In the previous example, object1 is a reference to an object that is based on Customer. This reference refers to the new object but does not contain the object data itself. In fact, you can create an object reference without creating an object at all, but it is not recommended creating object references such as this one that does not refer to an object because trying to access an object through such a reference will fail at run time. However, such a reference can be made to refer to an object, either by creating a new object, or by assigning it to an existing object:
+``` c#
+// not recommended creating of object references
+Customer object2;
+
+// recommended creating of object references
+Customer object3 = new Customer();
+Customer object4 = object3;
+```
+This code creates two object references that both refer to the same object. Therefore, any changes to the object made through object3 will be reflected in subsequent uses of object4. Because objects that are based on classes are referred to by reference, classes are known as reference types.
+
+#### Class Inheritance
+
+
 
 # The Common Type System
 
