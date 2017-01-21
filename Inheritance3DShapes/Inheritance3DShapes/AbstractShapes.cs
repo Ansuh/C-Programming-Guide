@@ -10,8 +10,8 @@ namespace Inheritance3DShapes
     {
         public abstract Point point { get; set; }
         public abstract float Volume();
-        public abstract float Arema();
-
+        public abstract float Area();
+      
 
     }
 }

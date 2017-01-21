@@ -12,13 +12,13 @@ namespace Inheritance3DShapes
         float a { get; set; }
         float b { get; set; }
         float c { get; set; }
-
+        public override Point point { get; set; }
+        
         public Ellipsoid()
         {
             this.a = 1;
             this.b = 1;
             this.c = 1;
-
             this.point = new Point();
 
         }
@@ -34,13 +34,13 @@ namespace Inheritance3DShapes
 
         public override float Area()
         {
-
-
+            float p = 
+            return 2; 
 
         }
         public override float Volume()
         {
-
+            return 4f/3 * (float)Math.PI * a * b * c;
         }
 
     }

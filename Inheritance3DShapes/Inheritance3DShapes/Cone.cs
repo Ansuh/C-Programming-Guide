@@ -10,24 +10,27 @@ namespace Inheritance3DShapes
     {
         float radius { get; set; }
         float height { get; set; }
+        public override Point point { get; set; }
+        
+            
 
         public Cone(float radius, float height, Point p)
         {
 
-            this.radius = radius;
-            this.height = height;
-            this.point = p;
+            this.radius = 1f;
+            this.height = 1f;
+            this.point = new Point();
         }
 
         public override float Area()
         {
 
-
+            return 1;
 
         }
         public override float Volume()
         {
-
+            return 1;
         }
     }
 }
