@@ -80,6 +80,40 @@ This code creates two object references that both refer to the same object. Ther
 
 #### Class Inheritance
 
+Inheritance is accomplished by using a derivation, which means a class is declared by using a base class from which it inherits data and behavior. A base class is specified by appending a colon and the name of the base class following the derived class name, like this:
+
+``` c#
+public class Manager : Employee
+    {
+        // Employee fields, properties, methods and events are inherited
+        // New Manager fields, properties, methods and events go here...
+    }
+```
+
+When a class declares a base class, it inherits all the members of the base class except the constructors.
+a class in C# can only directly inherit from one base class. However, because a base class may itself inherit from another class, a class may indirectly inherit multiple base classes. Furthermore, a class can directly implement more than one interface. 
+A class can be declared abstract. An abstract class contains abstract methods that have a signature definition but no implementation. Abstract classes cannot be instantiated. They can only be used through derived classes that implement the abstract methods. By constrast, a sealed class does not allow other classes to derive from it. 
+Class definitions can be split between different source files. 
+
+
+### Structs
+
+Structs are defined by using the struct keyword, for example:
+
+```c#
+public struct PostalAddress
+    {
+        // Fields, properties, methods and events go here...
+    }
+```
+
+
+
+
+
+
+
+
 
 
 # The Common Type System
