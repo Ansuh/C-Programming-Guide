@@ -34,8 +34,8 @@ namespace Inheritance3DShapes
 
         public override float Area()
         {
-            float p = 
-            return 2; 
+            float p = 1.6075f;
+            return (float)(4 * Math.PI * Math.Pow(Math.Pow(a * b, p) + Math.Pow(a * c,p) + Math.Pow(b * c, p)/3, 1/p));
 
         }
         public override float Volume()

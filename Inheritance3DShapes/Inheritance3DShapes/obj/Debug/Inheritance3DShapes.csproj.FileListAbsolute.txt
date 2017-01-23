@@ -1,2 +1,6 @@
 C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\bin\Debug\Inheritance3DShapes.exe.config
 C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\obj\Debug\Inheritance3DShapes.csprojResolveAssemblyReference.cache
+C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\bin\Debug\Inheritance3DShapes.exe
+C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\bin\Debug\Inheritance3DShapes.pdb
+C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\obj\Debug\Inheritance3DShapes.exe
+C:\Users\Work\Source\Repos\C-Programming-Guide\Inheritance3DShapes\Inheritance3DShapes\obj\Debug\Inheritance3DShapes.pdb

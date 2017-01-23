@@ -24,13 +24,13 @@ namespace Inheritance3DShapes
 
         public override float Area()
         {
-
-            return 1;
+            float l = (float)Math.Sqrt((Math.Pow(radius, 2) + Math.Pow(height, 2)));
+            return (float)Math.PI * (float)Math.Pow(radius, 2) + (float)Math.PI * radius * l;
 
         }
         public override float Volume()
         {
-            return 1;
+            return 1f / 3 * (float)Math.PI * (float)Math.Pow(radius, 2) * height;
         }
     }
 }
