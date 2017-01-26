@@ -165,8 +165,7 @@ class RectangleTester
 }
 }
 ```
-
-see #RotatoinMatrix     
+    
 
 
 
