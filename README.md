@@ -109,13 +109,6 @@ public struct PostalAddress
 
 
 
-
-
-
-
-
-
-
 # The Common Type System
 
 Two fundamental points about the type system in the .NET Framework:
@@ -172,6 +165,22 @@ class RectangleTester
 }
 }
 ```
+
+
+require "scientist"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 #Exception Class
