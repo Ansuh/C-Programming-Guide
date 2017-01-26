@@ -167,8 +167,7 @@ class RectangleTester
 ```
 
 
-require "scientist"
-
+for more info see # "sdvasdf"
 
 
 
