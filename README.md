@@ -4,7 +4,6 @@ _This repository includes the main concepts of C#._
 ## General Structure of a C# Program
 C# programs can consist of one or more files. Each file can contain zero or more namespaces. A namespace can contain types such as classes, structs, interfaces, enumerations, and delegates, in addition to other namespaces. The following is the skeleton of a C# program that contains all of these elements.
 ``` c#
-// A skeleton of a C# program 
 using System;
 namespace YourNamespace
 {
@@ -98,6 +97,7 @@ Class definitions can be split between different source files.
 
 ### Structs
 
+A struct type is a value type that is typically used to encapsulate small groups of related variables, such as the coordinates of a rectangle or the characteristics of an item in an inventory.
 Structs are defined by using the struct keyword, for example:
 
 ```c#
