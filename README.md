@@ -105,18 +105,24 @@ public struct PostalAddress
     {
         // Fields, properties, methods and events go here...
     }
-```
-``` c# example need to chek
- public struct CoOrds
-    {
-        public int x, y;
+``` 
+ Structs share most of the same syntax as classes, although structs are more limited than classes:
+- Within a struct declaration, fields cannot be initialized unless they are declared as const or static.
+- A struct cannot declare a default constructor (a constructor without parameters) or a destructor.
+- Structs are copied on assignment. When a struct is assigned to a new variable, all the data is copied, and any modification to the new copy does not change the data for the original copy. This is important to remember when working with collections of value types such as Dictionary<string, myStruct>.
+- Structs are value types and classes are reference types.
+- Unlike classes, structs can be instantiated without using a new operator.
+- Structs can declare constructors that have parameters.
+- A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from System.ValueType, which inherits from System.Object.
+- A struct can implement interfaces.
+- A struct can be used as a nullable type and can be assigned a null value.
 
-        public CoOrds(int p1, int p2)
-        {
-            x = p1;
-            y = p2;
-        }
-    }
+### Namespaces
+Namespaces are heavily used in C# programming in two ways. First, the .NET Framework uses namespaces to organize its many classes, as follows:
+
+``` c#
+System.Console.WriteLine("Hello World!");
+
 ```
 
 
