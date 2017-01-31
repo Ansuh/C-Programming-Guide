@@ -106,7 +106,18 @@ public struct PostalAddress
         // Fields, properties, methods and events go here...
     }
 ```
+``` c# example need to chek
+ public struct CoOrds
+    {
+        public int x, y;
 
+        public CoOrds(int p1, int p2)
+        {
+            x = p1;
+            y = p2;
+        }
+    }
+```
 
 
 # The Common Type System
