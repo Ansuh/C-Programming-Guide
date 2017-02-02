@@ -118,12 +118,99 @@ public struct PostalAddress
 - A struct can be used as a nullable type and can be assigned a null value.
 
 ### Namespaces
+The namespace keyword is used to declare a scope that contains a set of related objects. You can use a namespace to organize code elements and to create globally unique types.
+```c#
+namespace SampleNamespace
+{
+    class SampleClass { }
+
+    interface SampleInterface { }
+
+    struct SampleStruct { }
+
+    enum SampleEnum { a, b }
+
+    delegate void SampleDelegate(int i);
+
+    namespace SampleNamespace.Nested
+    {
+        class SampleClass2 { }
+    }
+}
+```
+
 Namespaces are heavily used in C# programming in two ways. First, the .NET Framework uses namespaces to organize its many classes, as follows:
 
 ``` c#
 System.Console.WriteLine("Hello World!");
 
 ```
+System is a namespace and Console is a class in that namespace. The using keyword can be used so that the complete name is not required, as in the following example:
+
+``` c#
+using System;
+```
+Second, declaring your own namespaces can help you control the scope of class and method names in larger programming projects. Use the namespace keyword to declare a namespace, as in the following example:
+```c#
+namespace SampleNamespace
+    {
+        class SampleClass
+        {
+            public void SampleMethod()
+            {
+                System.Console.WriteLine(
+                  "SampleMethod inside SampleNamespace");
+            }
+        }
+    }
+```
+
+#### Namespaces Overview
+Namespaces have the following properties:
+
+- They organize large code projects.
+- They are delimited by using the . operator.
+- The using directive obviates the requirement to specify the name of the namespace for every class.
+- The global namespace is the "root" namespace: global::System will always refer to the .NET Framework namespace System.
+
+### Interfaces
+An interface contains only the signatures of methods, properties, events or indexers. A class or struct that implements the interface must implement the members of the interface that are specified in the interface definition. In the following example, class ImplementationClass must implement a method named SampleMethod that has no parameters and returns void.
+``` c#
+interface ISampleInterface
+    {
+        void SampleMethod();
+    }
+
+    class ImplementationClass : ISampleInterface
+    {
+        // Explicit interface member implementation: 
+        void ISampleInterface.SampleMethod()
+        {
+            // Method implementation.
+        }
+
+        static void Main()
+        {
+            // Declare an interface instance.
+            ISampleInterface obj = new ImplementationClass();
+
+            // Call the member.
+            obj.SampleMethod();
+        }
+    }
+```
+
+An interface contains definitions for a group of related functionalities that a class or a struct can implement.
+By using interfaces, you can, for example, include behavior from multiple sources in a class. That capability is important in C# because the language doesn't support multiple inheritance of classes. In addition, you must use an interface if you want to simulate inheritance for structs, because they can't actually inherit from another struct or class.
+You define an interface by using the interface keyword, as the following example shows.
+
+```c#
+ interface IEquatable<T>
+    {
+        bool Equals(T obj);
+    }
+```
+Interfaces can contain methods, properties, events, indexers, or any combination of those four member types.
 
 
 # The Common Type System
