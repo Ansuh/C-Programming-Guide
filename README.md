@@ -230,7 +230,7 @@ Delegates have the following properties:
 - Delegates can be used to define callback methods.
 - Delegates can be chained together; for example, multiple methods can be called on a single event.
 - Methods do not have to match the delegate type exactly.
-- _C# version 2.0_ introduced the concept of Anonymous Methods, which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types.
+- _**C# version 2.0**_ introduced the concept of Anonymous Methods, which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types.
 
 
 # The Common Type System
