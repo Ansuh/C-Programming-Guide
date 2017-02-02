@@ -1,1 +1,134 @@
+Primary Operators
+hese are the highest precedence operators. 
+
+x.y –member access.
+x?.y – null conditional member access. Returns null if the left hand operand is null.
+f(x) – function invocation.
+a[x] – aggregate object indexing.
+a?[x] – null conditional indexing. Returns null if the left hand operand is null.
+x++ – postfix increment. Returns the value of x and then updates the storage location with the value of x that is one greater (typically adds the integer 1).
+x-- – postfix decrement. Returns the value of x and then updates the storage location with the value of x that is one less (typically subtracts the integer 1).
+New – type instantiation.
+Typeof – returns the System.Type object representing the operand.
+Checked – enables overflow checking for integer operations.
+Unchecked – disables overflow checking for integer operations. This is the default compiler behavior.
+default(T) – returns the default initialized value of type T, null for reference types, zero for numeric types, and zero/null filled in members for struct types.
+Delegate – declares and returns a delegate instance.
+Sizeof – returns the size in bytes of the type operand.
+-> – pointer dereferencing combined with member access.
+
+
+
+Unary Operators
+These operators have higher precedence than the next section and lower precedence than the previous section.
+
++x – returns the value of x.
+-x – numeric negation.
+!x – logical negation.
+~x – bitwise complement.
+++x – prefix increment. Returns the value of x after updating the storage location with the value of x that is one greater (typically adds the integer 1).
+--x – prefix decrement. Returns the value of x after updating the storage location with the value of x that is one less (typically adds the integer 1).
+(T)x – type casting.
+Await – awaits a Task.
+&x – address of.
+*x – dereferencing.
+
+
+
+Multiplicative Operators
+These operators have higher precedence than the next section and lower precedence than the previous section. 
+
+x * y – multiplication.
+x / y – division. If the operands are integers, the result is an integer truncated toward zero (for example, -7 / 2 is -3).
+x % y – modulus. If the operands are integers, this returns the remainder of dividing x by y. If q = x / y and r = x % y, then x = q * y + r.
+
+
+
+Additive Operators
+These operators have higher precedence than the next section and lower precedence than the previous section.
+
+x + y – addition.
+x – y – subtraction.
+
+
+
+Shift Operators
+hese operators have higher precedence than the next section and lower precedence than the previous section. 
+
+x << y – shift bits left and fill with zero on the right.
+x >> y – shift bits right. If the left operand is int or long, then left bits are filled with the sign bit. If the left operand is uint or ulong, then left bits are filled with zero.
+
+
+
+Relational and Type-testing Operators
+These operators have higher precedence than the next section and lower precedence than the previous section. 
+
+x < y – less than (true if x is less than y).
+x > y – greater than (true if x is greater than y).
+x <= y – less than or equal to.
+x >= y – greater than or equal to.
+Is – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
+As – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but as returns null where (T)x would throw an exception.
+
+
+
+Equality Operators
+These operators have higher precedence than the next section and lower precedence than the previous section. 
+
+x == y – equality. By default, for reference types other than string, this returns reference equality (identity test). However, types can overload ==, so if your intent is to test identity, it is best to use the ReferenceEquals method on object.
+x != y – not equal. See comment for ==. If a type overloads ==, then it must overload !=.
+
+
+
+Logical AND Operator
+This operator has higher precedence than the next section and lower precedence than the previous section. 
+
+x & y – logical or bitwise AND. Use with integer types and enum types is generally allowed.
+
+
+
+Logical XOR Operator
+This operator has higher precedence than the next section and lower precedence than the previous section.
+
+x ^ y – logical or bitwise XOR. You can generally use this with integer types and enum types.
+
+
+
+Logical OR Operator
+This operator has higher precedence than the next section and lower precedence than the previous section. 
+
+x | y – logical or bitwise OR. Use with integer types and enum types is generally allowed.
+
+
+
+Conditional AND Operator
+This operator has higher precedence than the next section and lower precedence than the previous section. 
+
+x && y – logical AND. If the first operand is false, then C# does not evaluate the second operand.
+
+
+
+Conditional OR Operator
+This operator has higher precedence than the next section and lower precedence than the previous section. 
+
+x || y – logical OR. If the first operand is true, then C# does not evaluate the second operand.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
