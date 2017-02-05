@@ -41,7 +41,6 @@ namespace YourNamespace
     }
 }
 ```
-
 Now we will discuss each of this types.
 
 ### Class
