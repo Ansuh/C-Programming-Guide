@@ -18,7 +18,6 @@ Sizeof – returns the size in bytes of the type operand.
 -> – pointer dereferencing combined with member access.
 
 
-
 Unary Operators
 These operators have higher precedence than the next section and lower precedence than the previous section.
 
@@ -32,7 +31,6 @@ These operators have higher precedence than the next section and lower precedenc
 Await – awaits a Task.
 &x – address of.
 *x – dereferencing.
-
 
 
 Multiplicative Operators
@@ -51,13 +49,11 @@ x + y – addition.
 x – y – subtraction.
 
 
-
 Shift Operators
 hese operators have higher precedence than the next section and lower precedence than the previous section. 
 
 x << y – shift bits left and fill with zero on the right.
 x >> y – shift bits right. If the left operand is int or long, then left bits are filled with the sign bit. If the left operand is uint or ulong, then left bits are filled with zero.
-
 
 
 Relational and Type-testing Operators
@@ -69,7 +65,6 @@ x <= y – less than or equal to.
 x >= y – greater than or equal to.
 Is – type compatibility. Returns true if the evaluated left operand can be cast to the type specified in the right operand (a static type).
 As – type conversion. Returns the left operand cast to the type specified by the right operand (a static type), but as returns null where (T)x would throw an exception.
-
 
 
 Equality Operators
@@ -86,12 +81,10 @@ This operator has higher precedence than the next section and lower precedence t
 x & y – logical or bitwise AND. Use with integer types and enum types is generally allowed.
 
 
-
 Logical XOR Operator
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
 x ^ y – logical or bitwise XOR. You can generally use this with integer types and enum types.
-
 
 
 Logical OR Operator
@@ -100,12 +93,10 @@ This operator has higher precedence than the next section and lower precedence t
 x | y – logical or bitwise OR. Use with integer types and enum types is generally allowed.
 
 
-
 Conditional AND Operator
 This operator has higher precedence than the next section and lower precedence than the previous section. 
 
 x && y – logical AND. If the first operand is false, then C# does not evaluate the second operand.
-
 
 
 Conditional OR Operator
@@ -114,19 +105,16 @@ This operator has higher precedence than the next section and lower precedence t
 x || y – logical OR. If the first operand is true, then C# does not evaluate the second operand.
 
 
-
 Null-coalescing Operator
 This operator has higher precedence than the next section and lower precedence than the previous section.
 
 x ?? y – returns x if it is non-null; otherwise, returns y.
 
 
-
 Conditional Operator
 This operator has higher precedence than the next section and lower precedence than the previous section. 
 
 t ? x : y – if test t is true, then evaluate and return x; otherwise, evaluate and return y.
-
 
 
 Assignment and Lambda Operators
