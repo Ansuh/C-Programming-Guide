@@ -231,6 +231,20 @@ Delegates have the following properties:
 - Methods do not have to match the delegate type exactly.
 - _**C# version 2.0**_ introduced the concept of Anonymous Methods, which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types.
 
+## Main() and Command-Line Arguments
+
+he Main method is the entry point of a C# console application or windows application. (Libraries and services do not require a Main method as an entry point.). When the application is started, the Main method is the first method that is invoked.
+There can only be one entry point in a C# program. If you have more than one class that has a Main method, you must compile your program with the /main compiler option to specify which Main method to use as the entry point. 
+``` c#
+class TestClass
+    {
+        static void Main(string[] args)
+        {
+            // Display the number of command line arguments:
+            System.Console.WriteLine(args.Length);
+        }
+    }
+```
 
 # The Common Type System
 
