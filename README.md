@@ -266,6 +266,8 @@ C#
 ##### Overview
 - The Main method is the entry point of an .exe program; it is where the program control starts and ends.
 - Main is declared inside a class or struct. Main must be static and it should not be public.  The enclosing class or struct is not required to be static.
+- Main can either have a void or int return type.
+- The Main method can be declared with or without a string[] parameter that contains command-line arguments. When using Visual Studio to create Windows Forms applications, you can add the parameter manually or else use the Environment class to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. The program is not treated as the first command-line argument.
 
 
 # The Common Type System
