@@ -1,6 +1,7 @@
 Primary Operators
 hese are the highest precedence operators. 
 
+
 x.y –member access.
 x?.y – null conditional member access. Returns null if the left hand operand is null.
 f(x) – function invocation.
