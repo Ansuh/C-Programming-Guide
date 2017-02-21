@@ -270,6 +270,13 @@ C#
 - The Main method can be declared with or without a string[] parameter that contains command-line arguments. When using Visual Studio to create Windows Forms applications, you can add the parameter manually or else use the Environment class to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. The program is not treated as the first command-line argument.
 
 
+#Object-Oriented Programming
+C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.
+Encapsulation means that a group of related properties, methods, and other members are treated as a single unit or object.
+Inheritance describes the ability to create new classes based on an existing class.
+Polymorphism means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways
+
+
 # The Common Type System
 
 Two fundamental points about the type system in the .NET Framework:
