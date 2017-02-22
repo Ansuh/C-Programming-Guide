@@ -247,10 +247,6 @@ class TestClass
 ```
 #### Main() and Command-Line Arguments (C# Programming Guide)
 
-Visual Studio 2015 Other Versions 
- 
-Updated: July 20, 2015
-For the latest documentation on Visual Studio 2017 RC, see Visual Studio 2017 RC Documentation.
 The Main method is the entry point of a C# console application or windows application. (Libraries and services do not require a Main method as an entry point.). When the application is started, the Main method is the first method that is invoked.
 There can only be one entry point in a C# program. If you have more than one class that has a Main method, you must compile your program with the /main compiler option to specify which Main method to use as the entry point. For more information, see /main (C# Compiler Options).
 C#
