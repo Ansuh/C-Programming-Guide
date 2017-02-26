@@ -231,6 +231,21 @@ Delegates have the following properties:
 - Methods do not have to match the delegate type exactly.
 - _**C# version 2.0**_ introduced the concept of Anonymous Methods, which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types.
 
+### Events
+
+Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the publisher and the classes that receive (or handle) the event are called subscribers.
+In a typical C# Windows Forms or Web application, you subscribe to events raised by controls such as buttons and list boxes. You can use the Visual C# integrated development environment (IDE) to browse the events that a control publishes and select the ones that you want to handle. The IDE automatically adds an empty event handler method and the code to subscribe to the event.
+
+#### Events Overview
+Events have the following properties:
+
+- The publisher determines when an event is raised; the subscribers determine what action is taken in response to the event.
+- An event can have multiple subscribers. A subscriber can handle multiple events from multiple publishers.
+- Events that have no subscribers are never raised.
+- Events are typically used to signal user actions such as button clicks or menu selections in graphical user interfaces.
+- When an event has multiple subscribers, the event handlers are invoked synchronously when an event is raised. 
+- In the .NET Framework class library, events are based on the EventHandler delegate and the EventArgs base class.
+
 ## Main() and Command-Line Arguments
 
 he Main method is the entry point of a C# console application or windows application. (Libraries and services do not require a Main method as an entry point.). When the application is started, the Main method is the first method that is invoked.
